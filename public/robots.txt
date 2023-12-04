@@ -1,0 +1,6 @@
+# 웹 크롤러 또는 검색 엔진 로봇에게 웹 사이트를 어떻게 크롤링하고 어떤 부분을 수집할 수 있는지 지시하는 표준
+
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+

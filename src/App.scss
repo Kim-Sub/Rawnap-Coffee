@@ -1,0 +1,102 @@
+// 상단 네비 폰트 font-family: 'Dai Banna SIL', serif;
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@400;600;700&display=swap');
+// 본문 폰트 font-family: 'Hahmlet', serif;
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;300;400;500;600;700;800&display=swap');
+
+
+// 공통 클래스
+// 이너 작업 정리시 색 투명하게
+.inner{width: 70%; margin: 0 auto; background: rgb(225, 238, 223); }
+
+.changeWhite {
+   background-color: rgba(255, 255, 255, .95); border-bottom: 1px solid rgba(114, 112, 112, 0.2);
+}
+.invert {filter: invert(1);}
+.flexCenter {display: flex; justify-content: center; align-items: center;}
+.originPosition{transform: translateY(0px) translateX(0px) scale(1) !important;}
+.transPosition{transform: translateY(500px) scale(.5); transition: .5s;}
+.originOpacity{opacity: 1 !important;}
+.transOpacity{opacity: 0; transition: .7s;}
+
+h1{font-size: 35px; letter-spacing: -1px;}
+span{font-size: 14px; color: rgb(30, 41, 41); }
+a{transition: .1s ease-in-out;}
+// 영문 폰트 사이즈 조정
+.en{font-family: 'Dai Banna SIL'; font-size: 22px; letter-spacing: .8px;}
+
+
+
+// 컬러 팔레트
+$mainColor : #1e3926 ;
+$gray: #333 ;
+$border : rgba(114, 112, 112, 0.2) ;
+
+
+// ─────────────── CSS 시작 ───────────────
+body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+   font-size: 20px; line-height: 2; letter-spacing: .3px;
+   background: rgb(253, 252, 252);}
+
+
+
+#Nav{
+   z-index: 10; transition: 1.2s;
+   font-family: 'Dai Banna SIL', serif; letter-spacing: 1px;
+   h1{// 로고 logo
+      font-size: 30px;
+      a{justify-content: center;
+         img{transition: 1.8s;}
+      }
+   }
+   ul{// 네비 nav
+      >li{
+         >a{
+            color: black; font-size: 28px;
+            &:hover{color:$mainColor;}
+         }
+      }
+   }
+}
+
+// ─────────────── routes 1 ───────────────
+#Main{
+   .videoBox{
+      width: 100vw; height: 100vh;
+      video{width: 100%; height: 100%;}
+   }
+   .brandIntro{
+      padding: 100px 0; 
+      color: white; text-align: center; 
+      background-color: #1b201d73 ; background-image: url(../src/img/brandIntro.jpg);
+      background-blend-mode: multiply;
+      h1{
+         font-weight: 600;
+      }
+      p{margin-top: 40px;}
+   }
+   .introExplan{
+      padding: 200px 0; text-align: center; font-weight: 600;
+   }
+   .brandValue{
+      height: fit-content; 
+      display: flex; justify-content: center;
+      .circle{
+         width: 100%; height: 320px;
+         background-image: url(../src/img/brandValue.jpg);
+         display: flex; flex-direction: column; align-items: center; justify-content: center;
+         text-align: center; color: white; transition: 1s;
+         >h1{font-size: 30px;}
+         >p{font-size: 48px; margin-bottom: -20px; font-weight: 700;}
+      }
+      .circle.rounded {
+         width: 320px; border-radius: 50%;
+         background-position-x: 585px; color: $mainColor;
+         box-shadow: rgba(0, 0, 0, 0.2) 10px 15px 15px;
+      }
+   }
+   // brandValue 원 호버시 보이게 되는 부분
+   .valueDetail {
+      display: none; opacity: 0; transition: opacity 1s;
+    }
+   .valueDetail.visible {display: block; opacity: 1;}
+}
