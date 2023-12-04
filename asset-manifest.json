@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Rawnap-Coffee/static/css/main.87b404cc.css",
+    "main.js": "/Rawnap-Coffee/static/js/main.f331899a.js",
+    "static/media/main.mp4": "/Rawnap-Coffee/static/media/main.29995fa3f7999a46eaad.mp4",
+    "static/media/brandIntro.jpg": "/Rawnap-Coffee/static/media/brandIntro.ccea51d916391484b058.jpg",
+    "static/media/brandValue.jpg": "/Rawnap-Coffee/static/media/brandValue.1b6daee835b3e020a2eb.jpg",
+    "index.html": "/Rawnap-Coffee/index.html",
+    "main.87b404cc.css.map": "/Rawnap-Coffee/static/css/main.87b404cc.css.map",
+    "main.f331899a.js.map": "/Rawnap-Coffee/static/js/main.f331899a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87b404cc.css",
+    "static/js/main.f331899a.js"
+  ]
+}
