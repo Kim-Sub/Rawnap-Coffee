@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/Rawnap-Coffee/static/css/main.87b404cc.css",
-    "main.js": "/Rawnap-Coffee/static/js/main.f331899a.js",
+    "main.css": "/Rawnap-Coffee/static/css/main.ccbe6fd9.css",
+    "main.js": "/Rawnap-Coffee/static/js/main.f6ab6a4c.js",
     "static/media/main.mp4": "/Rawnap-Coffee/static/media/main.29995fa3f7999a46eaad.mp4",
+    "static/media/brandValue3.jpg": "/Rawnap-Coffee/static/media/brandValue3.289713b090ecc9921f39.jpg",
     "static/media/brandIntro.jpg": "/Rawnap-Coffee/static/media/brandIntro.ccea51d916391484b058.jpg",
+    "static/media/brandValue4.jpg": "/Rawnap-Coffee/static/media/brandValue4.1b69fad8f15b1e89b433.jpg",
+    "static/media/brandValue2.jpg": "/Rawnap-Coffee/static/media/brandValue2.100e31072dc1ce89136f.jpg",
     "static/media/brandValue.jpg": "/Rawnap-Coffee/static/media/brandValue.1b6daee835b3e020a2eb.jpg",
+    "static/media/brandValue1.jpg": "/Rawnap-Coffee/static/media/brandValue1.fe399bb44626179a7ee6.jpg",
     "index.html": "/Rawnap-Coffee/index.html",
-    "main.87b404cc.css.map": "/Rawnap-Coffee/static/css/main.87b404cc.css.map",
-    "main.f331899a.js.map": "/Rawnap-Coffee/static/js/main.f331899a.js.map"
+    "main.ccbe6fd9.css.map": "/Rawnap-Coffee/static/css/main.ccbe6fd9.css.map",
+    "main.f6ab6a4c.js.map": "/Rawnap-Coffee/static/js/main.f6ab6a4c.js.map"
   },
   "entrypoints": [
-    "static/css/main.87b404cc.css",
-    "static/js/main.f331899a.js"
+    "static/css/main.ccbe6fd9.css",
+    "static/js/main.f6ab6a4c.js"
   ]
 }
