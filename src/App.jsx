@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 
 // 라우터 import
 import Nav from "./home/Nav"
+import Footer from './home/Footer'
+
 import Main from "./routes/Main"
 import Story from "./routes/Story"
 import Menu from "./routes/Menu"
@@ -10,10 +12,12 @@ import Branch from "./routes/Branch"
 import Franchise from "./routes/Franchise"
 
 
+
 function App() {
    return (
       <div className='App'>
          <Nav />
+
          <Routes>
             <Route path='/' element={<Main />}></Route>
             <Route path='/Story' element={<Story />}></Route>
@@ -21,6 +25,8 @@ function App() {
             <Route path='/Branch' element={<Branch />}></Route>
             <Route path='/Franchise' element={<Franchise />}></Route>
          </Routes>
+         
+         <Footer />
       </div>
    )
 }

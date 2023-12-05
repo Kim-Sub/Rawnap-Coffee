@@ -11,11 +11,6 @@ const Main = () => {
 
   const handleHover = () => {
    setIsHovered(true);
-   const currentScrollY = window.scrollY;
-   window.scrollTo({
-     top: currentScrollY + 500,
-     behavior: 'smooth',
-   });
  };
 
 
@@ -50,11 +45,12 @@ const Main = () => {
         </div>
       </div>
       
-      <div ref={valueDetailRef} className={`valueDetail ${isHovered ? 'visible' : ''}`}>
-        <p>
-          브랜드 가치
-        </p>
-      </div>
+      <section ref={valueDetailRef} className={`valueDetail ${isHovered ? 'visible' : ''}`}>
+        <div>품질 위주의 제품</div>
+        <div>접근성과 가격 경쟁력</div>
+        <div>친환경 및 윤리적 가치</div>
+        <div>혁신적인 경험과 브랜드 스토리텔링</div>
+      </section>
     </div>
   );
 };
