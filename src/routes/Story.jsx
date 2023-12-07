@@ -46,9 +46,9 @@ const [tabWidth, setTabWidth] = useState(10);
       </div>
 
       <div className="inner">
-        {activeTab === "Story1" && <section><Story1 /></section>}
-        {activeTab === "Story2" && <section><Story2 /></section>}
-        {activeTab === "Story3" && <section><Story3 /></section>}
+        {activeTab === "From the farm" && <section><Story1 /></section>}
+        {activeTab === "Specialty coffee beans" && <section><Story2 /></section>}
+        {activeTab === "Good blending" && <section><Story3 /></section>}
       </div>
     </div>
    )

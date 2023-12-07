@@ -49,10 +49,10 @@ const [tabWidth, setTabWidth] = useState(10);
          </div>
 
          <div className="inner">
-            {activeTab === "Franchise1" && <section><Franchise1/></section>}
-            {activeTab === "Franchise2" && <section><Franchise2/></section>}
-            {activeTab === "Franchise3" && <section><Franchise3/></section>}
-            {activeTab === "Franchise4" && <section><Franchise4/></section>}
+            {activeTab === "가맹문의" && <section><Franchise1/></section>}
+            {activeTab === "가맹비용" && <section><Franchise2/></section>}
+            {activeTab === "가맹절차" && <section><Franchise3/></section>}
+            {activeTab === "브랜드 컨셉" && <section><Franchise4/></section>}
 
          </div>
       </div>

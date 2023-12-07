@@ -144,6 +144,15 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
       h1{text-align: center; letter-spacing: -1px; font-size: 50px !important;}
       .tabDiv{height: 150px; transition: .5s;}
    }
+   .menuContainer{
+      width: 100%;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      margin-bottom: 200px;
+      .menuItem{
+         width: 25%;
+         display: flex; flex-direction: column; justify-content: center; align-items: center;
+      }
+   }
 }
 
 
@@ -153,6 +162,20 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
    .inner{
       h1{text-align: center; letter-spacing: -1px; font-size: 50px !important;}
       .tabDiv{height: 150px; transition: .5s;}
+   }
+   #Franchise1{
+      .introduce{display: flex; justify-content: space-between; 
+         margin: 50px 0 100px 0;
+         div{height: 700px; 
+            &:nth-child(1){width: 60%;
+               display: flex; flex-direction: column; align-items: center; justify-content: center;
+               span{margin-bottom: 35px;}
+               p{font-size: 17px; margin-bottom: 30px;}
+            }
+            &:nth-child(2){width: 35%; background-image: url(../src/img/franchise/introduce.jpg); background-size: cover;}
+         }
+      }
+
    }
 }
 

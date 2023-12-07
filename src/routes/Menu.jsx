@@ -45,13 +45,12 @@ const [tabWidth, setTabWidth] = useState(10);
                ))}
             </div>
          </div>
-
          <div className="inner">
-            {activeTab === "Menu1" && <section><Menu1/></section>}
-            {activeTab === "Menu2" && <section><Menu2/></section>}
-            {activeTab === "Menu3" && <section><Menu3/></section>}
-            {activeTab === "Menu4" && <section><Menu4/></section>}
-            {activeTab === "Menu5" && <section><Menu5/></section>}
+            {activeTab === "SIGNATURE" && <section><Menu1/></section>}
+            {activeTab === "COFFEE" && <section><Menu2/></section>}
+            {activeTab === "NON COFFEE" && <section><Menu3/></section>}
+            {activeTab === "TEA" && <section><Menu4/></section>}
+            {activeTab === "BAKERY" && <section><Menu5/></section>}
 
          </div>
       </div>
