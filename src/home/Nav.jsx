@@ -23,7 +23,7 @@ const Nav = () => {
 
    // 활성화된 메뉴 컬러
    const activeStyle={
-      color:'#1c5710',
+      color:'#1c5710', 
   }   
   
 
