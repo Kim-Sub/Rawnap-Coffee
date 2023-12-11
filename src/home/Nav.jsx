@@ -28,7 +28,8 @@ const Nav = () => {
   
 
    return (
-      <div id='Nav' style={NobackNav} className={scrollPosition >= 100 ? 'changeWhite' : ''}>
+      <div id='Nav' style={NobackNav} className={scrollPosition >= 100 ? 'changeWhite' : 'changeWhite'}>
+         {/* ↑ 위 부분 : 뒷부분 changeWhite 지우면 작동 가능   */}
             {/* 로고 */}
             <h1 style={h1}>
                <NavLink to='/' style={a}>

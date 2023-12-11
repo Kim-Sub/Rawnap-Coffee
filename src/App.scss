@@ -7,6 +7,10 @@
 // 공통 클래스
 // 이너 작업 정리시 색 투명하게
 .inner{width: 65%; margin: 0 auto;  }
+.titleBox{
+   border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;
+   background-color: #f0f0f0;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
 
 .changeWhite {
    background-color: rgba(255, 255, 255, .95); border-bottom: 1px solid rgba(114, 112, 112, 0.2);
@@ -31,6 +35,8 @@ a{transition: .1s ease-in-out;}
 $mainColor : #19660a ;
 $gray: #333 ;
 $border : rgba(114, 112, 112, 0.2) ;
+
+::selection {background-color: $mainColor; color: white;}
 
 
 // 스크롤바 설정
@@ -166,8 +172,8 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
    #Franchise1{
       .introduce{display: flex; justify-content: space-between; 
          margin: 50px 0 100px 0;
-         div{height: 700px; 
-            &:nth-child(1){width: 60%;
+         div{height: 650px;
+            &:nth-child(1){width: 60%; height: fit-content;
                display: flex; flex-direction: column; align-items: center; justify-content: center;
                span{margin-bottom: 35px;}
                p{font-size: 17px; margin-bottom: 30px;}
@@ -175,7 +181,78 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
             &:nth-child(2){width: 35%; background-image: url(../src/img/franchise/introduce.jpg); background-size: cover;}
          }
       }
-
+      .thanksBox {
+         height: 100vh; display: flex; align-items: center; justify-content: center;
+         color: $mainColor; font-size: 50px ;font-weight: bold; text-align: center;
+       }
+      #FranchiseInput{ // 가맹문의
+         >div{margin-bottom: 50px;
+            h1{}
+            >p{text-align: center; font-family: 'Hahmlet', serif;
+               color: $mainColor; font-size: 22px; font-weight: bold;
+               margin:-30px 0 20px 0 }
+         }
+         form {
+            display: flex; flex-direction: column;
+            max-width: 500px; margin: 0 auto; margin-top: 50px;
+            >p{
+               position: relative; width: 500px; margin-bottom: 30px;
+               height: fit-content;
+               input { // 입력칸 부분
+                 font-size: 18px; color: $mainColor; background: none; width: 100%; 
+                 border: none; border-bottom: solid #aaaaaa 1px; 
+                 padding: 0 0 10px 10px;
+                 &::placeholder {color: #aaaaaa;}
+                 &:focus {outline: none;}
+               }
+               span { // 포커스시 보이는 _____선
+                 position: absolute; bottom: -1px; left: 0;
+                 width: 0; height: 2px; transition: 0.5s;
+                 background-color: #666;
+               }
+               input:focus ~ span, input:valid ~ span {width: 100%;}
+             
+               label {
+                 position: absolute; left: 10px; bottom: 8px; 
+                 width: 100%;
+                 color: #aaa; font-size: 20px; transition: all .2s;
+               }
+             }
+            div{
+               color: #aaa; 
+               &.existingStore{
+                  display: flex; justify-content: space-between; align-items: center;
+                  padding-left: 10px;
+                  select{
+                  padding: 10px; border: none ; background: rgb(254, 253, 252);
+                  font-size: 15px; color: #555;
+                  }
+               }
+               &.inquiry{
+                  display: flex; flex-direction: column;
+                  label{padding-left: 10px;}
+                  textarea{
+                     font-size: 16px; color: #666; border: 1px solid #aaa; border-radius: 5px;
+                     padding: 10px; height: 300px;
+                  }
+               }
+               &.agree{font-size: 16px; }
+             }
+            button {
+               margin: 50px 0; padding: 10px;
+               font-size: 20px; font-weight: bold; color: white; cursor: pointer;
+               background-color: #4caf50; border: none; border-radius: 5px;
+               &:hover {background-color: $mainColor;}
+            }
+            input:focus ~ label, input:valid ~ label {
+               bottom: 40px;
+               font-size: 16px; font-weight: bold; color: #666;
+            }
+          }
+      }
+   }
+   #Franchise2{
+      img{width: 100%;}
    }
 }
 
