@@ -8,7 +8,7 @@ const Story2 = () => {
             워시드와 내추럴 가공법을 거친 커피의 적절한 수분 함유량을 준수하고, 커핑을 통한 바디감, <br />
             후미, 향미, 산미 부분에서 각 독특한 특성을 잃지 않게끔 원두의 엄격한 기준을 세웠습니다.</span>
          <div className='videoBox'>
-            <video autoPlay loop muted playsInline src={require('../../video/story2.mp4')}></video>
+            <video autoPlay loop muted playsInline src={require('../../video/story2.mov')}></video>
          </div>
 
          <section>

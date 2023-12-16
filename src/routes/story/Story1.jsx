@@ -6,7 +6,7 @@ const Story1 = () => {
 
          <h2>농장에서 우리 손으로 그리고 한 잔의 커피가 되기까지</h2>
          <div className='videoBox'>
-            <video autoPlay loop muted playsInline src={require('../../video/story1.mp4')}></video>
+            <video autoPlay loop muted playsInline src={require('../../video/story1.mov')}></video>
          </div>
 
          <section>
