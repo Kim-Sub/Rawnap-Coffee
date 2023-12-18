@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/Rawnap-Coffee/static/css/main.17dd61f3.css",
-    "main.js": "/Rawnap-Coffee/static/js/main.b0de47a8.js",
+    "main.css": "/Rawnap-Coffee/static/css/main.0207c43d.css",
+    "main.js": "/Rawnap-Coffee/static/js/main.3366a893.js",
     "static/media/main.mp4": "/Rawnap-Coffee/static/media/main.29995fa3f7999a46eaad.mp4",
     "static/media/story1.mov": "/Rawnap-Coffee/static/media/story1.8c5cfefa4c4c84d7ac0c.mov",
     "static/media/story3.mov": "/Rawnap-Coffee/static/media/story3.6da5efca9af3287de188.mov",
     "static/media/story2.mov": "/Rawnap-Coffee/static/media/story2.b2af0ded88f453f15d15.mov",
     "static/media/brandValue3.jpg": "/Rawnap-Coffee/static/media/brandValue3.289713b090ecc9921f39.jpg",
+    "static/media/branch01.jpg": "/Rawnap-Coffee/static/media/branch01.5f2bb28bf6559b9b0d70.jpg",
     "static/media/brandIntro.jpg": "/Rawnap-Coffee/static/media/brandIntro.ccea51d916391484b058.jpg",
     "static/media/brandValue4.jpg": "/Rawnap-Coffee/static/media/brandValue4.1b69fad8f15b1e89b433.jpg",
     "static/media/start-costs.png": "/Rawnap-Coffee/static/media/start-costs.80b84bd29f35ce84e068.png",
@@ -25,11 +26,11 @@
     "static/media/signature3.png": "/Rawnap-Coffee/static/media/signature3.5ca4b99573fe37cfee70.png",
     "static/media/Fromthefarm3.jpg": "/Rawnap-Coffee/static/media/Fromthefarm3.d42a97c8ebfe1d4a58a5.jpg",
     "index.html": "/Rawnap-Coffee/index.html",
-    "main.17dd61f3.css.map": "/Rawnap-Coffee/static/css/main.17dd61f3.css.map",
-    "main.b0de47a8.js.map": "/Rawnap-Coffee/static/js/main.b0de47a8.js.map"
+    "main.0207c43d.css.map": "/Rawnap-Coffee/static/css/main.0207c43d.css.map",
+    "main.3366a893.js.map": "/Rawnap-Coffee/static/js/main.3366a893.js.map"
   },
   "entrypoints": [
-    "static/css/main.17dd61f3.css",
-    "static/js/main.b0de47a8.js"
+    "static/css/main.0207c43d.css",
+    "static/js/main.3366a893.js"
   ]
 }
