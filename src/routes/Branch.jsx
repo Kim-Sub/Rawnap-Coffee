@@ -48,7 +48,12 @@ const Branch = () => {
                {data.map((branch) => (
                   <li key={branch.id} onClick={() => openModal(branch)}>
                      {branch.name}
-                     <img src={branch.image} alt={branch.name} />
+                     <div className='imgBox'>
+                        <div className='hoverBox'>
+                           자세히보기
+                        </div>
+                        <img src={branch.image} alt={branch.name} />
+                     </div>
                   </li>
                ))}
             </ul>
@@ -58,7 +63,7 @@ const Branch = () => {
                overlay: {},
                content: {
                  width: '50%', height: '70%',
-                 margin: 'auto', padding: '20px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                 margin: 'auto', padding: '20px', borderRadius: '15px 0 0 15px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                },
              }}>
                {selectedBranch && (
