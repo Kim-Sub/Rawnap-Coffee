@@ -35,7 +35,7 @@ const [tabWidth, setTabWidth] = useState(10);
    return (
       <div id='Story'>
       <div className="inner">
-        <h1>COFFEE STORY</h1>
+        <h1>Coffee Story</h1>
         <div className='tabDiv' style={{ display: "flex", justifyContent: "center", width: `${tabWidth}%` }}>
           {tab.map((tabItem) => (
             <StoryButton key={tabItem} onClick={() => handleTabClick(tabItem)} isActive={activeTab === tabItem}>

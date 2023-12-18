@@ -6,7 +6,10 @@
 
 // 공통 클래스
 // 이너 작업 정리시 색 투명하게
-.inner{width: 60%; margin: 0 auto;  }
+.inner{width: 60%; margin: 0 auto;
+   >h1{text-align: center; letter-spacing: -1px; font-size: 50px !important; }
+   >.tabDiv{height: 150px; transition: .5s;}
+}
 .titleBox{
    border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;
    background-color: #f0f0f0;
@@ -26,9 +29,9 @@
 h1{font-size: 35px; letter-spacing: -2px; font-family: 'Dai Banna SIL', serif;}
 span{font-size: 14px; color: rgb(30, 41, 41); }
 a{transition: .1s ease-in-out;}
+p{color: #222;}
 // 영문 폰트 사이즈 조정
 .en{font-family: 'Dai Banna SIL'; font-size: 22px; letter-spacing: .8px;}
-p{color: #222;}
 
 
 
@@ -47,12 +50,17 @@ $border : rgba(114, 112, 112, 0.2) ;
 ::-webkit-scrollbar-track {background-color: #f1f1f1;}
 
 
-// ─────────────── CSS 시작 ─────────────── 전역 폰트사이즈 ───────────────
+// ■■■■■■■■■■■■■■■■■■■■■■■■■ CSS 시작 ■■■■■■■■■■■■■■■■■■■■■■■■■ 전역 폰트사이즈 
 body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
    font-size: 20px; line-height: 2; letter-spacing: -1.5px; color: #111;
    background: rgb(254, 253, 252);}
 
 
+// 리액트 모달 컴포넌트 (작성이유 : body 바로 아래에 생성되기 때문)
+.ReactModal__Content{
+   display: flex; flex-direction: column; align-items: center;
+   img{width: 100%;}
+}
 
 #Nav{
    z-index: 10; transition: 1.2s;
@@ -81,13 +89,13 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
    }
    .brandIntro{
       padding: 100px 0; 
-      color: white; text-align: center; 
+      color: white; text-align: center;  
       background-color: #1b201d73 ; background-image: url(../src/img/brandIntro.jpg);
       background-blend-mode: multiply;
       h1{
          font-weight: 600; font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
       }
-      p{margin-top: 40px;}
+      p{margin-top: 40px; color: white;}
    }
    .introExplan{
       padding: 200px 0; text-align: center; font-weight: 600;
@@ -102,13 +110,14 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
          text-align: center; color: white; transition: 1s;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
          >h1{font-size: 30px;}
-         >p{font-size: 48px; margin-bottom: -20px; font-weight: 700;}
+         >p{font-size: 48px; margin-bottom: -20px; font-weight: 700; color:white; transition: 1s;}
       }
       // brandValue 호버시 원으로 바뀌는 부분
       .circle.rounded {
          width: 320px; border-radius: 50%; border: 5px solid $mainColor;
          box-shadow: rgba(0, 0, 0, 0.2) 10px 15px 15px;
          background-position-x: 585px; color: $mainColor;
+         p{color: $mainColor;}
       }
    }
    // brandValue 호버시 보이게 되는 부분
@@ -139,10 +148,7 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
 
 // ─────────────── routes 2 ─────────────── 2,3,5 비슷한 구조를 사용하고 있습니다.
 #Story{margin-top: 150px;
-   .inner{
-      h1{text-align: center; letter-spacing: -1px; font-size: 50px !important; }
-      .tabDiv{height: 150px; transition: .5s;}
-   }
+   .inner{}
    #Story1, #Story2, #Story3 {
       display: flex; flex-direction: column; margin-bottom: 100px;
       h2{font-size: 35px; letter-spacing: -2px;  text-align: center; margin-top: 20px;}
@@ -167,10 +173,7 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
 
 // ─────────────── routes 3 ───────────────
 #Menu{margin-top: 150px;
-   .inner{
-      h1{text-align: center; letter-spacing: -1px; font-size: 50px !important;}
-      .tabDiv{height: 150px; transition: .5s;}
-   }
+   .inner{}
    .menuContainer{
       width: 100%;
       display: flex; flex-wrap: wrap; justify-content: space-between;
@@ -183,13 +186,33 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
 }
 
 
+// ─────────────── routes 4 ───────────────
+#Branch{margin-top: 150px;
+   .inner{
+      .tabDiv{
+         height: fit-content; width: 100%; padding: 5px 0 ; margin: 50px 0;
+         display: flex; flex-direction: column; justify-content: center; align-items: center;
+         border-top:  1px solid #ccc; border-bottom:  1px solid #ccc;
+         border-left: none; border-right: none;
+         color: $mainColor; background: #fff; cursor: pointer;  transition: .5s;
+         font-size: 17px; font-family: 'Hahmlet', serif; font-weight: bold;
+         &:hover{background: #f0f0f0;}
+         h3{}
+         p{font-family: 'nbg', '맑은 고딕', sans-serif; font-weight: normal;}
+      }
+      ul{
+         width: 100%; display: flex; flex-wrap: wrap;
+         li{
+            width: 33%;
+            img{width: 100%;}
+         }
+      }
+   }
+}
 
 // ─────────────── routes 5 ───────────────
 #Franchise{margin-top: 150px;
-   .inner{
-      h1{text-align: center; letter-spacing: -1px; font-size: 50px !important;}
-      .tabDiv{height: 150px; transition: .5s;}
-   }
+   .inner{}
    #Franchise1{
       .introduce{display: flex; justify-content: space-between; 
          margin: 50px 0 100px 0;
