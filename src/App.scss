@@ -317,8 +317,6 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
 
 
 
-
-
 #Footer{
    height: fit-content; background: white; padding: 50px 0;
    border-top: 1px solid rgba(114, 112, 112, 0.2);
@@ -327,6 +325,7 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
       display: flex; justify-content: space-between; padding: 0 20px;
       text-align: start; letter-spacing: -2px;
       .footerLeft{
+         display: flex; flex-direction: column;
          h1{font-size: 25px; margin-bottom: 20px; color: $mainColor;}
          p{font-size: 17px;
             &:nth-child(2){font-weight: bold;}
@@ -334,15 +333,23 @@ body{font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, 
          }
          >span{padding: 7px 10px; cursor: pointer; transition: .3s;
             &:hover{background: $mainColor; color: white;}
+            a{transition: .3s;
+               &:hover{color: white;}
+            }
          }
-         .address{font-size: 17px; margin-left: -10px;}
-         .modal-content{width: 40%;
+         .address,.tel{font-size: 17px; margin-left: -10px;}
+         // 모달컨텐츠 css
+         .modal-content{
+            width: 40%; min-height: fit-content; max-height: 80%; overflow-y: scroll;
             #Refuseemailcollect{
                display: flex; flex-direction: column;
                span{
                   &:nth-child(2){margin-bottom: 20px;}
                   &:nth-child(3){border-bottom: 1px solid #222; margin-bottom: 10px;}
                }
+            }
+            #Privacypolicy{
+               display: flex; flex-direction: column;
             }
          }
       }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Modal from '../components/Modal';
 import Refuseemailcollect from "./footer/Refuse-emailcollect";
-
+import Privacypolicy from "./footer/Privacy-policy";
 
 
 // 아이콘 import
@@ -55,13 +55,13 @@ const Footer = () => {
                   ></iframe>
                }/>
 
-               <p>TEL :　1234 - 5678</p>
+               <span className="tel"><a href="tel:12345678">TEL :　1234 - 5678</a></span>
 
-               <span onClick={handleOpenModal2}>이메일무단수집거부</span> <br />
+               <span onClick={handleOpenModal2}>이메일무단수집거부</span>
                <Modal isOpen={isModalOpen2} onClose={handleCloseModal2} content={<Refuseemailcollect/>} />
 
                <span onClick={handleOpenModal3}>개인정보처리방침</span>
-               <Modal isOpen={isModalOpen3} onClose={handleCloseModal3} content={<div>여긴</div>} />
+               <Modal isOpen={isModalOpen3} onClose={handleCloseModal3} content={<Privacypolicy/>} />
             </div>
 
             <div className='footerRight'>

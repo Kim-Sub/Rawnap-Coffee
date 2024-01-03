@@ -13,6 +13,13 @@ import Franchise from "./routes/Franchise"
 
 
 
+
+
+
+
+
+
+
 function App() {
    return (
       <div className='App'>
@@ -25,7 +32,7 @@ function App() {
             <Route path='/Branch' element={<Branch />}></Route>
             <Route path='/Franchise' element={<Franchise />}></Route>
          </Routes>
-         
+
          <Footer />
       </div>
    )
